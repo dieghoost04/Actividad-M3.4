@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+    <include file="$(find equipo5_autonomousNavigation_puzzleBot)/launch/gazebo.launch"/>
+
+    <include file="$(find equipo5_autonomousNavigation_puzzleBot)/launch/mapping.launch"/>
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+    <arg name="robot" default="$(find equipo5_autonomousNavigation_puzzleBot)/urdf/robot.urdf"/> 
+
+    <param name="robot_description" command="cat $(arg robot)" /> 
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" /> 
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find equipo5_autonomousNavigation_puzzleBot)/config/mapping_config.rviz" respawn="false" output="screen"/>
+</launch>
